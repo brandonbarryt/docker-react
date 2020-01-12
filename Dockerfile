@@ -1,8 +1,11 @@
 FROM node:alpine as builder 
+
 WORKDIR '/app'
+
 COPY package.json .
-RUN npm install
-#volume snot needed because we are creating a production build
+
+RUN sudo npm install
+#volumes not needed because we are creating a production build
 COPY . .
 #this will be created within the working directory of the container
 RUN npm run build
