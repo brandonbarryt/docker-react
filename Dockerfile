@@ -2,7 +2,7 @@ FROM node:alpine as builder
 
 WORKDIR '/app'
 
-COPY package.json ./
+COPY package*.json ./
 
 RUN sudo npm install
 #volumes not needed because we are creating a production build
