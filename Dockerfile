@@ -4,7 +4,7 @@ WORKDIR '/app'
 
 COPY package*.json ./
 
-RUN sudo npm install
+RUN npm install
 #volumes not needed because we are creating a production build
 COPY . .
 #this will be created within the working directory of the container
