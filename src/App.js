@@ -10,6 +10,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload. Rebuilding this was not very easy, but we are learning!
         </p>
+        <p> 
+          Adding another paragraph to the feature branch!
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
